@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap-reverse',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundImage: 'linear-gradient(to left, #041B3C, #0D264C)',
+    backgroundImage: 'linear-gradient(to left, #020d1d, #041B3C)',
     paddingBottom: 50
   },
   textContainer: {
@@ -83,6 +83,7 @@ const styles = StyleSheet.create({
     lineHeight: 1.2,
     marginTop: 20,
     backgroundImage: 'linear-gradient(to right, #ED497C, #A938D2)',
+    textShadow: '2px 2px linear-gradient(to right, #ED497C, #A938D2)',
     color: 'transparent',
     backgroundClip: 'text',
   },
