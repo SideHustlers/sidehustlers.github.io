@@ -21,7 +21,7 @@ const Splash = props => {
         <div className={css(styles.titleContainer)}>
           SideHustlers.io
         </div>
-        <div className={css(styles.headingContainer)}>
+        <div className={css(styles.headingContainer)}  style={{WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>
           AN OPEN SOURCE COLLABORATIVE
         </div>
         <div className={css(styles.subHeadingContainer)}>
@@ -46,7 +46,8 @@ const Splash = props => {
         <div style={{color: '#557499'}}>
           Have an idea for a project?
         </div>
-        <div className={css(styles.linkContainer)} onClick={() => redirectMailTo()}>
+        <div className={css(styles.linkContainer)} onClick={() => redirectMailTo()}
+        style={{WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>
           Email us at hello@sidehustlers.io
         </div>
       </div>
@@ -79,12 +80,11 @@ const styles = StyleSheet.create({
     fontWeight: 'normal',
     fontSize: 50,
     maxWidth: 600,
-    display: 'flex',
     lineHeight: 1.2,
     marginTop: 20,
     backgroundImage: 'linear-gradient(to right, #ED497C, #A938D2)',
     color: 'transparent',
-    backgroundClip: 'text'
+    backgroundClip: 'text',
   },
   subHeadingContainer: {
     fontWeight: 'lighter',
@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
     backgroundImage: 'linear-gradient(to right, #ED497C, #A938D2)',
     color: 'transparent',
     backgroundClip: 'text',
-    cursor: 'pointer'
+    cursor: 'pointer',
   }
 });
 
